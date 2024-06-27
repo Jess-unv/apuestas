@@ -1,0 +1,159 @@
+/* Estilos generales para el botón de login */
+.btn-outline-secondary {
+  border: 2px solid #6c757d; /* Borde gris */
+  padding: 0.5rem 1rem; /* Padding para espacio interno */
+  border-radius: 8px; /* Bordes redondeados */
+  font-size: 1rem; /* Tamaño de la fuente */
+  color: #6c757d; /* Texto gris */
+  background-color: #ffffff; /* Fondo blanco */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+  margin: 0.5rem; /* Margen para separar el botón */
+}
+
+.btn-outline-secondary:hover {
+  background-color: #f8f9fa; /* Fondo blanco ligeramente oscurecido al hacer hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra ligera al hacer hover */
+}
+
+/* Estilos para el modal */
+.modal-content {
+  padding: 1.5rem; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos para el encabezado del modal */
+.modal-header {
+  border-bottom: none; /* Sin borde inferior */
+  text-align: center; /* Centrar el título */
+}
+
+.modal-title {
+  font-size: 1.5rem; /* Tamaño de fuente del título */
+  color: #343a40; /* Color del texto */
+}
+
+/* Estilos para el cuerpo del modal */
+.modal-body {
+  padding: 1rem 0; /* Espaciado interno */
+}
+
+.form-group {
+  margin-bottom: 1rem; /* Espaciado inferior */
+}
+
+.form-label {
+  font-size: 1rem; /* Tamaño de la fuente de las etiquetas */
+  color: #495057; /* Color del texto */
+}
+
+.form-control {
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 0.75rem; /* Espaciado interno */
+  font-size: 1rem; /* Tamaño de la fuente */
+}
+
+/* Estilos para la alerta de error */
+.alert-danger {
+  margin-bottom: 1rem; /* Espaciado inferior */
+  font-size: 0.9rem; /* Tamaño de la fuente */
+}
+
+/* Estilos para el pie del modal */
+.modal-footer {
+  border-top: none; /* Sin borde superior */
+  justify-content: space-between; /* Distribuir botones */
+}
+
+.btn-secondary,
+.btn-primary {
+  padding: 0.5rem 1rem; /* Padding para espacio interno */
+  font-size: 1rem; /* Tamaño de la fuente */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Media queries para ajustar el diseño en diferentes tamaños de pantalla */
+@media (min-width: 576px) {
+  .modal-content {
+    padding: 2rem;
+  }
+  
+  .modal-title {
+    font-size: 1.75rem;
+  }
+
+  .form-control {
+    padding: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .btn-secondary,
+  .btn-primary {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal-content {
+    padding: 2.5rem;
+  }
+  
+  .modal-title {
+    font-size: 2rem;
+  }
+
+  .form-control {
+    padding: 1.25rem;
+    font-size: 1.2rem;
+  }
+
+  .btn-secondary,
+  .btn-primary {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .modal-content {
+    padding: 3rem;
+  }
+  
+  .modal-title {
+    font-size: 2.25rem;
+  }
+
+  .form-control {
+    padding: 1.5rem;
+    font-size: 1.3rem;
+  }
+
+  .btn-secondary,
+  .btn-primary {
+    padding: 1.25rem 2.5rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal-content {
+    padding: 3.5rem;
+  }
+  
+  .modal-title {
+    font-size: 2.5rem;
+  }
+
+  .form-control {
+    padding: 1.75rem;
+    font-size: 1.4rem;
+  }
+
+  .btn-secondary,
+  .btn-primary {
+    padding: 1.5rem 3rem;
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,113 @@
+/* NavComp.css */
+
+/* Estilos generales */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.navbar {
+  background-color: #040f1f; /* Fondo azul oscuro */
+  padding: 1rem 2rem; /* Espaciado interno */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff; /* Texto blanco */
+  width: 100%; /* Hacer que la barra de navegación ocupe todo el ancho */
+  box-sizing: border-box; /* Asegurar que el padding esté incluido en el ancho total */
+}
+
+.navbar-brand img {
+  height: 50px; /* Ajustar la altura del logo para pantallas pequeñas */
+  width: auto; /* Mantener la proporción */
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* Permitir que los elementos se ajusten a múltiples líneas */
+}
+
+/* Estilos para los botones */
+.navbar .btn {
+  border: 2px solid #007bff; /* Borde azul */
+  padding: 0.3rem 0.6rem; /* Reducir padding para botones más pequeños */
+  border-radius: 8px; /* Bordes redondeados */
+  font-size: 0.8rem; /* Reducir tamaño de la fuente */
+  color: #000000; /* Texto negro */
+  background-color: #ffffff; /* Fondo blanco */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+  margin: 0.5rem; /* Margen para separar los botones */
+}
+
+.navbar .btn:hover {
+  background-color: #e6e6e6; /* Fondo blanco ligeramente oscurecido al hacer hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra ligera al hacer hover */
+}
+
+.navbar .btn.disabled {
+  opacity: 0.6; /* Opacidad reducida para botones deshabilitados */
+  cursor: not-allowed;
+}
+
+.register-link {
+  color: #007bff; /* Color azul */
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.register-link:hover {
+  color: #0056b3; /* Azul más oscuro al pasar el cursor */
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+/* Media queries para ajustar el diseño en diferentes tamaños de pantalla */
+@media (min-width: 576px) {
+  .navbar-brand img {
+    height: 75px;
+  }
+
+  .navbar .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-brand img {
+    height: 100px;
+  }
+
+  .navbar .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-brand img {
+    height: 125px;
+  }
+
+  .navbar .btn {
+    padding: 0.7rem 1.4rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar-brand img {
+    height: 150px;
+  }
+
+  .navbar .btn {
+    padding: 0.8rem 1.6rem;
+    font-size: 1.2rem;
+  }
+}
